@@ -7,7 +7,7 @@ app.use((req, res, next) => {
 });
 app.get("/medium", (req, res) => {
   request(
-    { url: "https://medium.com/feed/@clintonweeyuan_10245" },
+    { url: "https://medium.com/feed/@gardenprotocol" },
     (error, response, body) => {
       if (error || response.statusCode !== 200) {
         return res.status(500).json({ type: "error", message: err.message });
